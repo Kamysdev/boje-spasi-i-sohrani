@@ -16,6 +16,6 @@ public class UIElementsScript : MonoBehaviour
 
     public void UpdateHP(int currentHealth, int maximumHealth)
     {
-        hpText.text = $"Health: {currentHealth}/{maximumHealth}";
+        hpText.text = $"{currentHealth}/{maximumHealth}";
     }
 }
