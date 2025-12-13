@@ -577,7 +577,7 @@ ModelImporter:
     - name: mixamorig:LeftShoulder
       parentName: mixamorig:Spine2
       position: {x: -0.07080386, y: 0.12458322, z: -0.0024382763}
-      rotation: {x: 0.5490457, y: -0.44072583, z: 0.5680636, w: 0.42616117}
+      rotation: {x: 0.5490457, y: -0.4407258, z: 0.5680636, w: 0.42616114}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:LeftArm
       parentName: mixamorig:LeftShoulder
@@ -597,7 +597,7 @@ ModelImporter:
     - name: mixamorig:LeftHandThumb1
       parentName: mixamorig:LeftHand
       position: {x: 0.029633105, y: 0.03621777, z: 0.014994043}
-      rotation: {x: 0.068148084, y: 0.008491991, z: -0.33053246, w: 0.9412927}
+      rotation: {x: 0.068147935, y: 0.008492204, z: -0.33053225, w: 0.9412929}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:LeftHandThumb2
       parentName: mixamorig:LeftHandThumb1
@@ -677,7 +677,7 @@ ModelImporter:
     - name: mixamorig:LeftHandPinky1
       parentName: mixamorig:LeftHand
       position: {x: -0.03544586, y: 0.11128816, z: -0.0013210292}
-      rotation: {x: -0.013568783, y: 0.0067062704, z: -0.054474268, w: 0.99840045}
+      rotation: {x: -0.013568782, y: 0.006706271, z: -0.054474264, w: 0.9984005}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:LeftHandPinky2
       parentName: mixamorig:LeftHandPinky1
@@ -827,7 +827,7 @@ ModelImporter:
     - name: mixamorig:LeftFoot
       parentName: mixamorig:LeftLeg
       position: {x: -9.541142e-10, y: 0.4367158, z: -2.6496777e-10}
-      rotation: {x: 0.44665274, y: 0.011923363, z: -0.042730846, w: 0.8936069}
+      rotation: {x: 0.44665274, y: 0.0119233625, z: -0.042730846, w: 0.89360684}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:LeftToeBase
       parentName: mixamorig:LeftFoot
@@ -876,7 +876,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6abb0b7a9ba4f9e4c86b1d9d74741411, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 7b227d72a7c834bd2b4af25203d5bca4, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

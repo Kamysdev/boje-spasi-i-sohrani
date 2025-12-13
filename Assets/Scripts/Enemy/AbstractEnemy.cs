@@ -97,7 +97,7 @@ public abstract class AbstractEnemy : MonoBehaviour, IEnemy
         if (dead == false)
         {
             dead = true;
-            animator.SetTrigger("Death");
+            animator.SetBool("Death", true);
             stop(true);
             StartCoroutine(despawn());
         }
