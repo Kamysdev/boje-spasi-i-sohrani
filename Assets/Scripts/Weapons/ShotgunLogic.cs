@@ -22,11 +22,24 @@ public class ShotgunLogic : MonoBehaviour
 
         foreach (var direction in directions)
         {
-            RaycastHit hit;
+            RaycastHit[] hits;
 
-            if (Physics.Raycast(firePoint.position, direction, out hit, 1000f, enemy))
+            Ray ray = new Ray(firePoint.position, firePoint.forward);
+            hits = Physics.RaycastAll(ray, 100f, enemy);
+
+            System.Array.Sort(hits, (x, y) => x.distance.CompareTo(y.distance));
+
+            if (hits.Length > 0)
             {
-                Debug.Log($"Hit: {hit.collider.name} with damage: {damage}");
+                for (int i = 0; i < hits.Length; i++)
+                {
+                    Health enemyHP = hits[i].transform.GetComponent<Health>();
+                    Debug.Log($"Hit enemy: {hits[i].transform.name} with damage: {damage}");
+                    if (enemyHP != null)
+                    {
+                        enemyHP.hpDecrease(damage);
+                    }
+                }
             }
         }
 

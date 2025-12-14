@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "boje-spasi-i-sohrani.sln"
+    "dotnet.defaultSolution": "RGR PTG.sln"
 }

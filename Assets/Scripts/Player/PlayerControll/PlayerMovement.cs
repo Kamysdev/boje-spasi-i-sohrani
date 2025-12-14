@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     private PlayerAnimationController playerAnimationController;
 
+    private float gravite = -9.81f;
+    private bool isGrounded;
+    private Vector3 velocity;
 
     void Awake()
     {
@@ -30,12 +33,26 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        velocity = new Vector3(0, 0, 0);
     }
 
     void Update()
     {
         MovePlayer();
         RotatePlayer();
+    }
+
+    void LateUpdate()
+    {
+        isGrounded = characterController.isGrounded;
+
+        if (isGrounded)
+        {
+            velocity.y = 0f;
+        }
+
+        velocity.y += gravite * Time.deltaTime;
+        characterController.Move(velocity * Time.deltaTime);
     }
 
     public void OnMove(InputAction.CallbackContext callbackContext)
@@ -87,6 +104,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnAttack(InputAction.CallbackContext ctx)
     {
+        if (!playerAnimationController.IsAiming) return;
+
         if (ctx.performed)
         {
             weaponScript.fireStart();

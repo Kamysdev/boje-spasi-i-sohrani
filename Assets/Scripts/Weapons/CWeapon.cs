@@ -9,6 +9,7 @@ public abstract class Cweapon : MonoBehaviour, IWeapon
     [HideInInspector]
     public bool canFire = true;
     public ParticleSystem weaponEffect;
+    public AudioSource weaponAudio;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public abstract class Cweapon : MonoBehaviour, IWeapon
     public virtual void fire(Ammunition ammunition)
     {
         if (ammunition.getAmmo(getWeaponType()) == false) return;
+        weaponAudio.Play();
         canFire = false;
         StartCoroutine(coolDown());
     }

@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(WaveSpawner());
+        //StartCoroutine(WaveSpawner());
     }
 
     public void spawnEnemy()
@@ -28,12 +28,6 @@ public class EnemySpawner : MonoBehaviour
         Health enemyHP = enemy.EnemyHP;
         enemyHP.spawnOnDeath.AddListener(pos => GetComponent<ItemSpawner>().spawnRandomItems(pos));
     }
-
-    // private void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space))
-    //         spawnEnemy();
-    // }
 
     private IEnumerator WaveSpawner()
     {
