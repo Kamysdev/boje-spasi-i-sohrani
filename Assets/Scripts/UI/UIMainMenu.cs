@@ -9,4 +9,10 @@ public class UIMainMenu : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
     }
+
+    public void exit ()
+    {
+        Debug.Log("на выход");
+        Application.Quit();
+    }
 }
