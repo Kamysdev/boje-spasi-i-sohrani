@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        //StartCoroutine(WaveSpawner());
+        
     }
 
     public void spawnEnemy()

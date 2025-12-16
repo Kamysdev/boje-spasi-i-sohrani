@@ -339,6 +339,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eac264b1666fab94fb47ac9b95c64429, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2602316564544293058}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eac264b1666fab94fb47ac9b95c64429, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8587905829686174052}
   m_SourcePrefab: {fileID: 100100000, guid: eac264b1666fab94fb47ac9b95c64429, type: 3}
 --- !u!1 &4258336802674420337 stripped
 GameObject:
@@ -446,7 +449,19 @@ MonoBehaviour:
       m_Calls: []
   spawnOnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8587905829686174052}
+        m_TargetAssemblyTypeName: ItemSpawner, Assembly-CSharp
+        m_MethodName: spawnRandomItems
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -477,3 +492,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8587905829686174052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258336802674420337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894ff05a7e0f1ca4a8cccd58f9f19902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemSpawner
+  itemFactoriesWithProbs:
+  - {fileID: 9170179993810648669, guid: e3c73a2fd31c16643a1ef5609cbc1220, type: 3}
+  - {fileID: 870430193860709879, guid: b614f3eb239075d4dbe434193262cb73, type: 3}

@@ -189,11 +189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6988484921769346905, guid: 0a57d4a95859e4a009092d86b9f887fe, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -919.70355
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6988484921769346905, guid: 0a57d4a95859e4a009092d86b9f887fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1079.4
+      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 6988484921769346905, guid: 0a57d4a95859e4a009092d86b9f887fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -210,6 +210,10 @@ PrefabInstance:
     - target: {fileID: 7240302643201941117, guid: 0a57d4a95859e4a009092d86b9f887fe, type: 3}
       propertyPath: m_Name
       value: TimePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459905958964260308, guid: 0a57d4a95859e4a009092d86b9f887fe, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5823,6 +5827,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 476959668}
+    - target: {fileID: 4999686233912479794, guid: 507db3d08a1b749e8821eb36b3095774, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 857370774553915806}
     - target: {fileID: 5003945831004279150, guid: 507db3d08a1b749e8821eb36b3095774, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5935,6 +5943,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 270950887}
+    - target: {fileID: 8449641082088390686, guid: 507db3d08a1b749e8821eb36b3095774, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 857370774553915806}
     - target: {fileID: 8471199832974814180, guid: 507db3d08a1b749e8821eb36b3095774, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6413,6 +6425,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 655ede63463e6104aa853319766095d0, type: 3}
+--- !u!4 &857370774553915806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5398933636290235267, guid: 655ede63463e6104aa853319766095d0, type: 3}
+  m_PrefabInstance: {fileID: 857370774553915805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2960456367815334593
 PrefabInstance:
   m_ObjectHideFlags: 0
