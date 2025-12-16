@@ -529,18 +529,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: GazMask(Clone)
+    - name: Gaz Mask(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch35
-      parentName: GazMask(Clone)
+      parentName: Gaz Mask(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: GazMask(Clone)
+      parentName: Gaz Mask(Clone)
       position: {x: -0.0000082507995, y: 1.0124135, z: 0.0034367114}
       rotation: {x: -0.0000016063149, y: -0.0000024060655, z: 0.00007424918, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -876,7 +876,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 68d3df361534742abafb455a550fc3e3, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 7b227d72a7c834bd2b4af25203d5bca4, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

@@ -82,6 +82,8 @@ public class WeaponScript : MonoBehaviour
 
                 //currentWeapon.weaponEffect.Play();
             }
+
+            Debug.Log($"Started firing weapon: {currentWeapon.name}");
         }
     }
 
