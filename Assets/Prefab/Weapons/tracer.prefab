@@ -156,5 +156,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TracerScript
   length: 5
-  speed: 100
+  speed: 70
   lifeTime: 0.3

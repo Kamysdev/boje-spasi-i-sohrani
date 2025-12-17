@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
     public UnityEvent onDeath;
     public UnityEvent onHitTaken;
 
+    private bool isDead = false;
+
 
     void Start() => onHealthChange?.Invoke(currentHealth, maximumHealth);
 
@@ -48,10 +50,11 @@ public class Health : MonoBehaviour
 
         onHealthChange?.Invoke(currentHealth, maximumHealth);
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
+            isDead = true;
             onDeath?.Invoke();
-            spawnOnDeath?.Invoke(transform.position);
+            spawnOnDeath?.Invoke(this.transform.position);
         }
     }
 }

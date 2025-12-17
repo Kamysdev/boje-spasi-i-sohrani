@@ -26,7 +26,6 @@ public class EnemySpawner : MonoBehaviour
 
         enemy.positionAndRotation(position, Quaternion.identity);
         Health enemyHP = enemy.EnemyHP;
-        enemyHP.spawnOnDeath.AddListener(pos => GetComponent<ItemSpawner>().spawnRandomItems(pos));
     }
 
     private IEnumerator WaveSpawner()

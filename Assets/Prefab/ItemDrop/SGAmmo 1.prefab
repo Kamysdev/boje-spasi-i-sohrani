@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd3c99fb1d230645a93c91a1dabd1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmmoBox
-  weaponType: 0
+  weaponType: 1
   amount: 10
 --- !u!1001 &7378449077337540658
 PrefabInstance:

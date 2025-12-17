@@ -27,7 +27,7 @@ public class ShotgunLogic : MonoBehaviour
             Ray ray = new Ray(firePoint.position, firePoint.forward);
             hits = Physics.RaycastAll(ray, 100f, enemy);
 
-            System.Array.Sort(hits, (x, y) => x.distance.CompareTo(y.distance));
+            // System.Array.Sort(hits, (x, y) => x.distance.CompareTo(y.distance));
 
             if (hits.Length > 0)
             {
